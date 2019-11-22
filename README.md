@@ -1,13 +1,13 @@
-#Steps to run mobile tests
+# Steps to run mobile tests
  
- ##Note:
+ ## Note:
  App is automated considering app location as `United States` because based on the location app flows changes. Hence please make sure app location is set to `United States`.
  
- ##Runing WatchFlow
+ ## Runing WatchFlow
 ```bash
 mvn clean test -DgroupName=WATCHFLOW
 ```
-##Getting n product
+## Getting n product
 ```bash
 mvn clean test -DgroupName=GETPRODUCT
 ```
@@ -15,14 +15,14 @@ mvn clean test -DgroupName=GETPRODUCT
 
 
 
-#Steps to run StringIntersection tests
+# Steps to run StringIntersection tests
 ```bash
 mvn clean test -DgroupName=BRUTEFORCE
 mvn clean test -DgroupName=HASHSET
 ```
 
-#Time Complexity
-##Hash Based Approach
+# Time Complexity
+## Hash Based Approach
 I have used `HashSet retainAll` method here to solve the problem
 The method retainAll is inherited from AbstractCollection and looks like this:
 
@@ -44,7 +44,7 @@ we loop over this.iterator() and call c.contains. So the time complexity is n ca
 So final time complexity is `O(n)`
 
 
-##BruteForce
+## BruteForce
 In this approach i have used normal nested for loop and for this time complexity is `O(n²)`
 
 
